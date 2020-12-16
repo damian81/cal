@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
 
         function inverse() {
             let num = document.getElementById("n1");
             num.value = 1 / num.value;
+        }
+       function square() {
+            let num = document.getElementById("n1");
+            num.value = num.value * num.value;
         }
     </script>
 </head>
@@ -16,6 +21,7 @@
     <input type="text" id="n1" onclick="empty()">
     <p>
         <button onclick="inverse()"> 1/x </button>
+        <button onclick="square()"> x<sup>2</sup> </button>
     </p>
 </body>
 </html>
